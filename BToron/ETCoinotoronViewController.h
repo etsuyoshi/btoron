@@ -14,7 +14,7 @@
 
 
 
-@interface ETViewController : GAITrackedViewController<UIScrollViewDelegate,UITableViewDataSource,UITableViewDelegate,UINavigationControllerDelegate>{
+@interface ETCoinotoronViewController : GAITrackedViewController<UIScrollViewDelegate,UITableViewDataSource,UITableViewDelegate,UINavigationControllerDelegate>{
     
 }
 

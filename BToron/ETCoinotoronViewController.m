@@ -6,22 +6,24 @@
 //  Copyright (c) 2014年 tuyo.en. All rights reserved.
 //
 
-#import "ETViewController.h"
+#import "ETCoinotoronViewController.h"
 
-@interface ETViewController (){
+@interface ETCoinotoronViewController (){
     NSArray *arrStrWorker;
     NSDictionary *dictJson;
     
     int heightForRow;
     int heightForHeader;
     int heightForFooter;
+    
+    UIButton *btnReturn;
 }
 
 @end
 
 
 
-@implementation ETViewController{
+@implementation ETCoinotoronViewController{
     UITableView *myTableView;
 }
 
@@ -35,8 +37,26 @@
     
     // Do any additional setup after loading the view, typically from a nib.
     
-    myTableView = [[UITableView alloc]initWithFrame:self.view.bounds
-                                            style:UITableViewStylePlain];
+    
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    btnReturn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    btnReturn.frame = CGRectMake(0, 0, self.view.bounds.size.width/3,50);
+//    btnReturn.titleLabel.text = @"Return";
+    [btnReturn setTitle:@"Return"
+               forState:UIControlStateNormal];
+    [btnReturn addTarget:self action:@selector(return:)
+        forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btnReturn];
+    
+    
+    // Do any additional setup after loading the view, typically from a nib.
+    
+    myTableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 40,
+                                                               self.view.bounds.size.width,
+                                                               self.view.bounds.size.height)
+                                              style:UITableViewStylePlain];
+    
     
     myTableView.dataSource = self;
     myTableView.delegate = self;
@@ -51,10 +71,11 @@
     //refreshControl.contentInset = UIEdgeInsetsMake(-24, 0, 0, 0);
     
     
-//    NSString *strUrl = @"https://coinotron.com/coinotron/AccountServlet?action=api&api_key=B76B4056B7CD42B191D3FBFFBBAC810F";
-    NSString *strUrl = @"https://www.btcguild.com/api.php?api_key=2182923da723a7979e281cc2dbb18b0d";
+    NSString *strUrl = @"https://coinotron.com/coinotron/AccountServlet?action=api&api_key=B76B4056B7CD42B191D3FBFFBBAC810F";
+//    NSString *strUrl = @"https://www.btcguild.com/api.php?api_key=2182923da723a7979e281cc2dbb18b0d";
     dictJson = [self getJson:strUrl];
-    arrStrWorker = [self getWorker:strUrl];
+    arrStrWorker = [self getWorkerFromJson:dictJson];
+//    arrStrWorker = [self getWorker:strUrl];
     
     NSLog(@"username = %@", dictJson[@"username"]);
     NSLog(@"workers = %@", dictJson[@"workers"]);
@@ -345,7 +366,13 @@ cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
 }
 
+-(NSArray *)getWorkerFromJson:(NSDictionary *)dictJson{
+    NSArray *arrW = [dictJson[@"workers"] allKeys];
+    return arrW;
+}
 
+
+//以下より上の方が良い
 -(NSArray *)getWorker:(NSString *)strUrl{
     
     //ワーカーの名称を配列に格納
@@ -385,15 +412,9 @@ cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     return arrW;
 }
 
-
--(NSArray *)getName{
-//    {"user":{"user_id":556314,"total_rewards":0.00000000,"paid_rewards":0.00000000,"unpaid_rewards":0.00000000,"past_24h_rewards":0.00000000,"total_rewards_nmc":0.00000000,"paid_rewards_nmc":0.00000000,"unpaid_rewards_nmc":0.00000000,"past_24h_rewards_nmc":0.00000000},"workers":{"1":{"worker_name":"wataryoichi_1","hash_rate":178097.98,"valid_shares":11912,"stale_shares":16,"dupe_shares":16,"unknown_shares":232,"valid_shares_since_reset":11912,"stale_shares_since_reset":16,"dupe_shares_since_reset":16,"unknown_shares_since_reset":232,"valid_shares_nmc":0,"stale_shares_nmc":0,"dupe_shares_nmc":0,"unknown_shares_nmc":0,"valid_shares_nmc_since_reset":0,"stale_shares_nmc_since_reset":0,"dupe_shares_nmc_since_reset":0,"unknown_shares_nmc_since_reset":0,"last_share":9}},"pool":{"pool_speed":12091.13,"pps_rate":0.00000000196698829412,"difficulty":11756551917,"pps_rate_nmc":0,"difficulty_nmc":3047194}}
+-(void)return:(id)sender{
     
-    
-//    https://www.btcguild.com/api.php?api_key=2182923da723a7979e281cc2dbb18b0d
-    
-    
-    return nil;
+    [self dismissViewControllerAnimated:NO completion:nil];
 }
 
 @end
