@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A1847511948477500C30559 /* ETGetDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1847501948477500C30559 /* ETGetDataViewController.m */; };
+		2A1847531948525C00C30559 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A1847521948525C00C30559 /* AdSupport.framework */; };
+		2A1847561948536400C30559 /* BSDefaultViewObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1847541948536400C30559 /* BSDefaultViewObject.m */; };
 		2A45AA521946E65F00A189A0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A45AA511946E65F00A189A0 /* Foundation.framework */; };
 		2A45AA541946E65F00A189A0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A45AA531946E65F00A189A0 /* CoreGraphics.framework */; };
 		2A45AA561946E65F00A189A0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A45AA551946E65F00A189A0 /* UIKit.framework */; };
@@ -22,6 +25,12 @@
 		2A45AA761946E65F00A189A0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A45AA551946E65F00A189A0 /* UIKit.framework */; };
 		2A45AA7E1946E65F00A189A0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2A45AA7C1946E65F00A189A0 /* InfoPlist.strings */; };
 		2A45AA801946E65F00A189A0 /* BToronTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A45AA7F1946E65F00A189A0 /* BToronTests.m */; };
+		2A45AA941946FDC200A189A0 /* libAdIdAccess.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A45AA8B1946FDC200A189A0 /* libAdIdAccess.a */; };
+		2A45AA951946FDC200A189A0 /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A45AA8C1946FDC200A189A0 /* libGoogleAnalyticsServices.a */; };
+		2A45AA97194700D900A189A0 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A45AA96194700D900A189A0 /* CoreData.framework */; };
+		2A45AA99194700E400A189A0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A45AA98194700E400A189A0 /* SystemConfiguration.framework */; };
+		2A45AA9B1947013F00A189A0 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A45AA9A1947013F00A189A0 /* libz.dylib */; };
+		9EEB4D283BCA42908E883620 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C3CCF66047B4EEAB8A6090D /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +44,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A18474F1948477500C30559 /* ETGetDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ETGetDataViewController.h; path = Class/Data/ETGetDataViewController.h; sourceTree = "<group>"; };
+		2A1847501948477500C30559 /* ETGetDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ETGetDataViewController.m; path = Class/Data/ETGetDataViewController.m; sourceTree = "<group>"; };
+		2A1847521948525C00C30559 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		2A1847541948536400C30559 /* BSDefaultViewObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSDefaultViewObject.m; sourceTree = "<group>"; };
+		2A1847551948536400C30559 /* BSDefaultViewObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSDefaultViewObject.h; sourceTree = "<group>"; };
 		2A45AA4E1946E65F00A189A0 /* BToron.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BToron.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A45AA511946E65F00A189A0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2A45AA531946E65F00A189A0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -55,6 +69,19 @@
 		2A45AA7B1946E65F00A189A0 /* BToronTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BToronTests-Info.plist"; sourceTree = "<group>"; };
 		2A45AA7D1946E65F00A189A0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2A45AA7F1946E65F00A189A0 /* BToronTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BToronTests.m; sourceTree = "<group>"; };
+		2A45AA8B1946FDC200A189A0 /* libAdIdAccess.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAdIdAccess.a; sourceTree = "<group>"; };
+		2A45AA8C1946FDC200A189A0 /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalyticsServices.a; sourceTree = "<group>"; };
+		2A45AA8E1946FDC200A189A0 /* GAI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAI.h; sourceTree = "<group>"; };
+		2A45AA8F1946FDC200A189A0 /* GAIDictionaryBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIDictionaryBuilder.h; sourceTree = "<group>"; };
+		2A45AA901946FDC200A189A0 /* GAIFields.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIFields.h; sourceTree = "<group>"; };
+		2A45AA911946FDC200A189A0 /* GAILogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAILogger.h; sourceTree = "<group>"; };
+		2A45AA921946FDC200A189A0 /* GAITrackedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITrackedViewController.h; sourceTree = "<group>"; };
+		2A45AA931946FDC200A189A0 /* GAITracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITracker.h; sourceTree = "<group>"; };
+		2A45AA96194700D900A189A0 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		2A45AA98194700E400A189A0 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		2A45AA9A1947013F00A189A0 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		2C25CEC02D4D47ABA22DE0A2 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		3C3CCF66047B4EEAB8A6090D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,9 +89,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A1847531948525C00C30559 /* AdSupport.framework in Frameworks */,
+				2A45AA9B1947013F00A189A0 /* libz.dylib in Frameworks */,
+				2A45AA99194700E400A189A0 /* SystemConfiguration.framework in Frameworks */,
+				2A45AA97194700D900A189A0 /* CoreData.framework in Frameworks */,
 				2A45AA541946E65F00A189A0 /* CoreGraphics.framework in Frameworks */,
+				2A45AA941946FDC200A189A0 /* libAdIdAccess.a in Frameworks */,
 				2A45AA561946E65F00A189A0 /* UIKit.framework in Frameworks */,
+				2A45AA951946FDC200A189A0 /* libGoogleAnalyticsServices.a in Frameworks */,
 				2A45AA521946E65F00A189A0 /* Foundation.framework in Frameworks */,
+				9EEB4D283BCA42908E883620 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +115,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A18474E194846C900C30559 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				2A1847551948536400C30559 /* BSDefaultViewObject.h */,
+				2A1847541948536400C30559 /* BSDefaultViewObject.m */,
+				2A18474F1948477500C30559 /* ETGetDataViewController.h */,
+				2A1847501948477500C30559 /* ETGetDataViewController.m */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
 		2A45AA451946E65F00A189A0 = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +133,7 @@
 				2A45AA791946E65F00A189A0 /* BToronTests */,
 				2A45AA501946E65F00A189A0 /* Frameworks */,
 				2A45AA4F1946E65F00A189A0 /* Products */,
+				2C25CEC02D4D47ABA22DE0A2 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,10 +149,15 @@
 		2A45AA501946E65F00A189A0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2A1847521948525C00C30559 /* AdSupport.framework */,
+				2A45AA9A1947013F00A189A0 /* libz.dylib */,
+				2A45AA98194700E400A189A0 /* SystemConfiguration.framework */,
+				2A45AA96194700D900A189A0 /* CoreData.framework */,
 				2A45AA511946E65F00A189A0 /* Foundation.framework */,
 				2A45AA531946E65F00A189A0 /* CoreGraphics.framework */,
 				2A45AA551946E65F00A189A0 /* UIKit.framework */,
 				2A45AA731946E65F00A189A0 /* XCTest.framework */,
+				3C3CCF66047B4EEAB8A6090D /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -114,6 +165,7 @@
 		2A45AA571946E65F00A189A0 /* BToron */ = {
 			isa = PBXGroup;
 			children = (
+				2A18474E194846C900C30559 /* Data */,
 				2A45AA601946E65F00A189A0 /* ETAppDelegate.h */,
 				2A45AA611946E65F00A189A0 /* ETAppDelegate.m */,
 				2A45AA631946E65F00A189A0 /* Main_iPhone.storyboard */,
@@ -121,6 +173,7 @@
 				2A45AA691946E65F00A189A0 /* ETViewController.h */,
 				2A45AA6A1946E65F00A189A0 /* ETViewController.m */,
 				2A45AA6C1946E65F00A189A0 /* Images.xcassets */,
+				2A45AA891946FD8F00A189A0 /* Library */,
 				2A45AA581946E65F00A189A0 /* Supporting Files */,
 			);
 			path = BToron;
@@ -155,6 +208,37 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		2A45AA891946FD8F00A189A0 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				2A45AA8A1946FDC200A189A0 /* GoogleAnalytics */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		2A45AA8A1946FDC200A189A0 /* GoogleAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				2A45AA8B1946FDC200A189A0 /* libAdIdAccess.a */,
+				2A45AA8C1946FDC200A189A0 /* libGoogleAnalyticsServices.a */,
+				2A45AA8D1946FDC200A189A0 /* Library */,
+			);
+			path = GoogleAnalytics;
+			sourceTree = "<group>";
+		};
+		2A45AA8D1946FDC200A189A0 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				2A45AA8E1946FDC200A189A0 /* GAI.h */,
+				2A45AA8F1946FDC200A189A0 /* GAIDictionaryBuilder.h */,
+				2A45AA901946FDC200A189A0 /* GAIFields.h */,
+				2A45AA911946FDC200A189A0 /* GAILogger.h */,
+				2A45AA921946FDC200A189A0 /* GAITrackedViewController.h */,
+				2A45AA931946FDC200A189A0 /* GAITracker.h */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -162,9 +246,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2A45AA831946E65F00A189A0 /* Build configuration list for PBXNativeTarget "BToron" */;
 			buildPhases = (
+				47254EE02E9B434AB2134806 /* Check Pods Manifest.lock */,
 				2A45AA4A1946E65F00A189A0 /* Sources */,
 				2A45AA4B1946E65F00A189A0 /* Frameworks */,
 				2A45AA4C1946E65F00A189A0 /* Resources */,
+				4E6472F6E07A47D5A282B80B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -249,6 +335,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		47254EE02E9B434AB2134806 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4E6472F6E07A47D5A282B80B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2A45AA4A1946E65F00A189A0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -256,6 +375,8 @@
 			files = (
 				2A45AA6B1946E65F00A189A0 /* ETViewController.m in Sources */,
 				2A45AA5E1946E65F00A189A0 /* main.m in Sources */,
+				2A1847511948477500C30559 /* ETGetDataViewController.m in Sources */,
+				2A1847561948536400C30559 /* BSDefaultViewObject.m in Sources */,
 				2A45AA621946E65F00A189A0 /* ETAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -388,12 +509,17 @@
 		};
 		2A45AA841946E65F00A189A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C25CEC02D4D47ABA22DE0A2 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BToron/BToron-Prefix.pch";
 				INFOPLIST_FILE = "BToron/BToron-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BToron/GoogleAnalytics",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -401,12 +527,17 @@
 		};
 		2A45AA851946E65F00A189A0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C25CEC02D4D47ABA22DE0A2 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BToron/BToron-Prefix.pch";
 				INFOPLIST_FILE = "BToron/BToron-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BToron/GoogleAnalytics",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -471,6 +602,7 @@
 				2A45AA851946E65F00A189A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2A45AA861946E65F00A189A0 /* Build configuration list for PBXNativeTarget "BToronTests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +611,7 @@
 				2A45AA881946E65F00A189A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

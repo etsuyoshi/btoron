@@ -7,7 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <QuartzCore/QuartzCore.h>
+#import "GAITrackedViewController.h"
+#import "GAI.h"
+#import "ETGetDataViewController.h"
 
-@interface ETViewController : UIViewController
+
+
+@interface ETViewController : GAITrackedViewController<UIScrollViewDelegate,UITableViewDataSource,UITableViewDelegate,UINavigationControllerDelegate>{
+    
+}
 
 @end
